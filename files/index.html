@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyllon's Resume</title>
+    <link rel="stylesheet" href="static/css/design.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+	    <li><a href="resume">Resume</a></li>
+	    <li><a href="#contact">Contact</a></li>
+	    <li><a href="#projects">Projects</a></li>
+	    <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+	    <li style="float:left"><a class="active" href="#home">Home</a></li>
+        </ul>
+    </nav>
+    <div id="wrap" >
+	<div id = "home">
+        <header>
+            <img src="static/img/me.jpeg">
+            <h1>
+		    Hi! My name is <span class="myName">Dyllon Ngmon</span> 
+            </h1>
+            <h3>I am a software engineer with a keen interest on building fast, secure, and reliable products.  I am currently building enterprise microservices at Canadian Tire.</h3>
+        </header>
+	</div>
+        <hr>
+        <div class="anchor" id="about">
+            <h2>About Me</h2>
+            <hr class="line">
+            <p>Hi! My name is Dyllon and I enjoy tinkering with different types of technology.  I started out in cybersecurity but discovered a passion for coding as I continued
+	    with my education.  I pivoted into software engineering after graduating with my bachelors in cybersecurity and doing a couple of cybersecurity related internships.<br><br> 
+ 
+	    Today I am working on microservices at Canadian Tire using Spring Boot, Kubernetes, Terraform and Microsoft Azure.  In my free time I enjoy learning new technologies,
+	    such as the rust programming language.  I have created a <a href="https://github.com/Dy11on/actix-microservice">microservice</a> and <a href="#home">this portfolio</a> in Rust,  and I am currently working on a 2D game in Rust using
+	    a custom game engine!</p>
+        </div>
+        <div class="anchor" id="work">
+		<h2>Work</h2>
+            <hr class="line">
+            <table id="exp">
+                <tr>
+                    <td>Feb 2021 - Current </td>
+                    <td>Software Engineer</td>
+                    <td>• Successfully deployed new environments utilizing Microsoft Azure, Kubernetes and Terraform
+                        <br>
+                        • Successfully created microservices using Spring Boot and deployed them through Github Actions
+			<br>
+                        • Improved the speed of our CI/CD deployment process by 70-80%
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sept 2020 - Dec 2020</td>
+                    <td>Vulnerability Management Student Analyst</td>
+                    <td> • Performed data analysis on large files using Pandas and Python, extracting key information that was used in reports to VPs
+			<br>
+                        • Improved performance of a heavily used program by 70%
+                    </td>
+                </tr>
+                <tr>
+                    <td>May 2019 - Dec 2019</td>
+                    <td>Security Consultant Intern</td>
+                    <td>• Performed grey-box and black-box penetration tests against web and mobile applications to find multiple vulnerabilities, contributing to client retention
+                        <br>
+                        • Collaborated with colleagues on various assessments leading to high impact findings
+			<br>
+                        • Communicated with clients of differing technical levels, explaining different vulnerabilities and the potential business impact
+                    </td>
+                </tr>
+                <tr>
+                    <td>June 2018 - Aug 2018</td>
+                    <td>Cloud Solutions Assistant</td>
+                    <td>• Communicated with cross-departmental colleagues to classify data based on the degree of importance, and performed an integral role in the migration of the infrastructure system to a cloud-based platform, in order to increase synergy by ensuring files are readily available throughout the organization</td>
+                </tr>
+            </table>
+        </div>
+        <div class="anchor" id="projects">
+            <h2>Projects</h2>
+            <hr class="line">
+
+            <div class="portfolio">
+                <div class="gallery">
+		    <h4 style="text-align: center;"> Rust Microservice </h4>
+		    <a href="https://github.com/Dy11on/actix-microservice"><img src="static/img/rustMicroservice2.png"></a>
+                    <div class="desc">Created a REST API microservice in Rust that follows the CRUD design pattern.</div>
+                </div>
+
+                <div class="gallery">
+		    <h4 style="text-align: center;"> Rust Portfolio Website</h4>
+		    <a href="https://github.com/Dy11on/portfolio"><img src="static/img/rustPortfolioWebsite.png"></a>
+                    <div class="desc">Created this portfolio website which is containerized and deployed through the use of Google Cloud Run.</div>
+                </div>
+
+                <div class="gallery">
+		    <h4 style="text-align: center;"> Smart Watch Authentication Application </h4>
+		    <a href="https://github.com/Dy11on/Permission-Based-Two-Factor"><img src="static/img/goReactWatch.png"></a>
+                    <div class="desc">Created a 2-factor smart watch authentication application which used a Golang backend and a React-Native IOS and Watch OS application front-end.</div>
+                </div>
+            </div>
+        </div>
+        <div class="anchor" id="contact">
+            <h2>Contact</h2>
+            <hr class="line">
+            <div class="media">
+		<a href="mailto:dngmonwork@gmail.com"><img src="static/img/mail.jpg" alt="Email"></a>
+                <h4>Email</h4>
+            </div>
+            <div class="media">
+		<a href="https://www.linkedin.com/in/dyllon-n/"><img src="static/img/LinkedIn.png" alt="LinkedIn"></a>
+                <h4>LinkedIn</h4>
+            </div>
+            <div class="media">
+		<a href="https://github.com/Dy11on/"><img src="static/img/hub.png" alt="GitHub"></a>
+                <h4>GitHub</h4>
+            </div>
+	    <a href="mailto:dngmonwork@gmail.com"><button id="btn">Message</button></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
