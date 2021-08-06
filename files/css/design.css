@@ -1,14 +1,15 @@
 :root{
-	--mainColor: #C9ADA7;
-	--secondaryColor: #9A8C98;
+	--mainColor: #1C1C1C;
+	--secondaryColor: #0F0614;
 	--tertiaryColor: #F2E9E4;
 	--redColor: #CB0E36;
 
 	--borderColor: #4A4E69;
+	--heading: #00F7FF;
 
-	--mainText: #black;
-	--secondaryText: #4A4E69;
-	--tertiaryText: #22223B;
+	--mainText: #E3E3E3;
+	--secondaryText: #1EF3BB;
+	--tertiaryText: #101010;
 }
 
 *, body {
@@ -32,6 +33,7 @@ h2 {
     padding: 15px 30px;
     width: 350px;
     /* background: linear-gradient(to right, rgba(61,244,196,1), rgba(255,255,255,0)); */
+    color: var(--heading);
 }
 /* #about h2 { */
 /*     margin-top: 100px; */
@@ -75,7 +77,7 @@ ul {
     width: 100%;
     list-style-type: none;
     padding: 10px;
-    background-color: var(--secondaryText);
+    background-color: var(--tertiaryText);
     position: fixed;
     color: #F2E9E4;
   }
