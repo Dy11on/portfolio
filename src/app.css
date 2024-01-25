@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face { */
+/*   font-family: 'Kosugi Maru'; */
+/*   font-style: normal; */
+/*   font-weight: 400; */
+/*   src: url('./KosugiMaru-Regular.ttf'); */
+/* } */
+/* * { */
+/*   font-family: 'Kosugi Maru', sans-serif; */
+/* } */
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./OpenSans.ttf');
+}
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.image{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%; /*don't forget prefixes*/
+  background-position: center center;
+  /* as mentioned by Vad: */
+  background-size: cover;
+}
+
+.projects{
+  color: #7C3AED;
+}

@@ -1,0 +1,31 @@
+<script>
+  export let hi;
+
+  let tabs = [
+    {name:'About me', link: '#about'},
+    {name:'Experience', link: '#experience'},
+    {name:'Projects', link: '#projects'},
+    {name:'Resume', link: '/assets/resume.pdf'},
+  ]
+</script>
+
+<header class={'sticky z-[10] top-0 px-6 flex items-center justify-between border border-solid' + (
+  hi > 0 ? ' py-4 bg-slate-950 border-violet-950' : 'py-6 bg-transparent border-transparent'
+)}>
+  <h1 class="font-medium">
+    <b>Dyllon</b> Ngmon
+  </h1>
+  <div class="sm:flex items-center gap-4 hidden">
+    {#each tabs as tab}
+      <a href={tab.link} class="duration-200 hover:text-violet-400">
+        <p>{tab.name}</p>
+      </a>
+    {/each}
+  </div>
+  <a class="blueShadow relative overflow-hidden px-5 py-2 group rounded-full bg-white text-slate-950"
+  href="mailto:dngmonwork@gmail.com"
+  >
+    <div class="absolute top-0 right-full w-full h-full bg-violet-400 opacity-20 group-hover:translate-x-full z-0 duration-200"/>
+    <h4 class="relative z-9">Get in touch!</h4>
+  </a>
+</header>
